@@ -32,3 +32,22 @@ close.addEventListener("click", function(){
     sideBar.classList.remove("open-sidebar")
     sideBar.classList.add("close-sidebar")
 })
+
+
+document.addEventListener("click", function(event){
+    if(
+        sideBar.classList.contains("open-sidebar") &&
+        !sideBar.contains(event.target) &&
+        !menu.contains(event.target)
+    ){
+        sideBar.classList.remove("open-sidebar");
+        sideBar.classList.add("close-sidebar");
+    }
+})
+
+
+// Preloader //
+
+window.addEventListener("load", function(){
+    document.querySelector(".preloader").classList.add("hide-preloader");
+})
