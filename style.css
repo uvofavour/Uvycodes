@@ -175,6 +175,13 @@ header ul a{
     cursor: pointer;
     transition: 0.3s;
 }
+
+.hero-info button a,
+.card button a{
+    color: white;
+    text-decoration: none;
+}
+
 .hero-info button:hover{
     box-shadow: 0 0 15px #727fde86;
 }
@@ -380,6 +387,11 @@ header ul a{
     height: 100vh;
     margin-top: 200px;
     margin-bottom: 700px;
+}
+
+.project-info button a {
+    color: white;
+    text-decoration: none;
 }
 
 .project-card{
@@ -620,6 +632,7 @@ header ul a{
     position: absolute;
     top: 10%;
     left: 40%;
+    color: white;
 }
 
 .social-box{
