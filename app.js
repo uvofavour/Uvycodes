@@ -1,5 +1,17 @@
+// Preloader //
+
+function hidePreloader() {
+    document.querySelector(".preloader")?.classList.add("hide-preloader");
+}
+
+window.addEventListener("load", function() {
+    setTimeout(hidePreloader, 3000);
+});
+
+
+
 const Video1 = document.getElementById('projectVideo1');
-const Video2 = document.getElementById('coming-soonVideo2');
+const Video2 = document.getElementById('projectVideo2');
 const Video3 = document.getElementById('projectVideo3');
 const hoverSign = document.querySelector(".hover-sign");
 
@@ -47,12 +59,4 @@ document.addEventListener("click", function(event){
 
 
 
-// Preloader //
 
-function hidePreloader() {
-    document.querySelector(".preloader")?.classList.add("hide-preloader");
-}
-
-window.addEventListener("load", function() {
-    setTimeout(hidePreloader, 3000);
-});
