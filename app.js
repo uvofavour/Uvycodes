@@ -46,16 +46,13 @@ document.addEventListener("click", function(event){
 })
 
 
+
 // Preloader //
 
 function hidePreloader() {
     document.querySelector(".preloader")?.classList.add("hide-preloader");
 }
 
-if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", hidePreloader, { once: true });
-} else {
-    hidePreloader();
-}
-
-setTimeout(hidePreloader, 3000);
+window.addEventListener("load", function() {
+    setTimeout(hidePreloader, 3000);
+});
