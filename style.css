@@ -25,7 +25,7 @@ html{
     right: 0;
     bottom: 0;
     z-index: -1;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
 }
 
 header{
@@ -117,7 +117,7 @@ header ul a{
     top: 0;
     width: 100%;
     justify-content: center;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
 }
 
 .blackhole-box video{
@@ -707,7 +707,7 @@ footer h1{
 
 .menu-icon{
     font-size: 35px;
-    cursor: pointer;
+    cursor: pointer;what 
     display: none;
 }
 
